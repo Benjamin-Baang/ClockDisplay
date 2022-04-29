@@ -425,7 +425,7 @@ void printAMPM(int &ap) {
     char *line1 = "Set AM/PM:";
     lcd.setCursor(4, 1);
     lcd.print(line1);
-    if (digitalRead(B5) == LOW) ap = !ap;
+    if (digitalRead(B6) == LOW) ap = !ap;
     if (ap) sprintf(buffer, "%s", "AM");
     else sprintf(buffer, "%s", "PM");   
     lcd.setCursor(9, 2);
