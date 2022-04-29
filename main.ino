@@ -34,12 +34,12 @@ void setup() {
     lcd.backlight();
     lcd.clear();
 
-    // Default Time: 12:00:00 AM January 1, 2000
+    // Default Time: 12:00:00 AM January 1, 2020
     rtc_clock.init();
     // HH:MM:SS
     rtc_clock.set_time(0, 0, 0);
     // DD:MM:YYYY
-    rtc_clock.set_date(1, 1, 2000);
+    rtc_clock.set_date(1, 1, 2020);
     setSyncProvider(getArduinoDueTime);
 
     // Initialize IO Pins
