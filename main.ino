@@ -282,7 +282,6 @@ void TickFct_Timer() {
                     count--;
                 }
             }
-            else count = 59;
             break;
         case T_Activate:
             if (digitalRead(B4) == LOW) {
