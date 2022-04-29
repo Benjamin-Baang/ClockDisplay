@@ -24,7 +24,7 @@ int aHour = 1, aMinute = 0, aAmpm = 1;
 boolean alarm_flag = false;
 
 // Timer Settings
-int tHour = 0, tMinute = 0;
+int tHour = 0, tMinute = 0, tSecond = 0;
 boolean timer_flag = false;
 
 void setup() {
@@ -305,6 +305,7 @@ void TickFct_Timer() {
         default:
             break;
     }
+    tSecond = count;
     delay(1000);
 }
 
@@ -381,8 +382,8 @@ void printTimer() {
     char *line0 = "Timer Settings";
     lcd.setCursor(3,0);
     lcd.print(line0);
-    sprintf(buffer, "%02d:%02d", tHour, tMinute);
-    lcd.setCursor(7,2);
+    sprintf(buffer, "%02d:%02d:%02d", tHour, tMinute, tSecond);
+    lcd.setCursor(6,2);
     lcd.print(buffer);
 }
 
