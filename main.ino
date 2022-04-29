@@ -17,7 +17,8 @@ RTC_clock rtc_clock(XTAL);
 dht11 DHT11;
 
 // Clock Settings
-int pHour, pMinute, pAmpm, pDay, pMonth, pYear;
+int pHour, pMinute, pAmpm, pDay, pMonth;
+uint16_t pYear;
 
 // Alarm Settings
 int aHour = 1, aMinute = 0, aAmpm = 1;
