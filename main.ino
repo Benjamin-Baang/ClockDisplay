@@ -235,7 +235,7 @@ void TickFct_Alarm() {
             }
             break;
         case A_Activate:
-            if (digitalRead(B3) == LOW) {
+            if (digitalRead(B6) == LOW) {
                 Alarm_state = A_Sleep;
                 alarm_flag = false;
             }
@@ -284,7 +284,7 @@ void TickFct_Timer() {
             }
             break;
         case T_Activate:
-            if (digitalRead(B4) == LOW) {
+            if (digitalRead(B6) == LOW) {
                 Timer_state = T_Sleep;
                 timer_flag = false;
             }
